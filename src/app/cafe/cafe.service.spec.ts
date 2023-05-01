@@ -57,4 +57,7 @@ describe('CafeComponent', () => {
   it('should have 4 <tr> elements', () => {
     expect(debug.queryAll(By.css('tr'))).toHaveSize(4)
   });
+  it('should have <thread head>', () => {
+    expect(debug.queryAll(By.css('thead.thead-dark'))).toHaveSize(1)
+  });
 });
