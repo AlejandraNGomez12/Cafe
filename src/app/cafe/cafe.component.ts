@@ -27,10 +27,7 @@ export class CafeComponent implements OnInit {
   }
 
   cantidadesPorVariedad(){
-    console.log('tipo lenght--> '+this.variedadesCafe.length);
-
     for (let i = 0; i < this.variedadesCafe.length; i++) {
-      console.log('tipo--> '+this.variedadesCafe[i].tipo);
       if(this.variedadesCafe[i].tipo == 'Café de Origen'){
         this.cantidadOriginal = this.cantidadOriginal + 1;
       }else if(this.variedadesCafe[i].tipo == 'Blend'){
